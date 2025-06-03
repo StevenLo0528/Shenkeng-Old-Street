@@ -1,0 +1,76 @@
+/* Footer Styles */
+.footer {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  padding: var(--spacing-5) 0 var(--spacing-2);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-4);
+}
+
+.footer-logo h2 {
+  font-size: 1.75rem;
+  margin-bottom: var(--spacing-1);
+  color: var(--color-white);
+}
+
+.footer-logo p {
+  font-size: 1rem;
+  color: var(--color-gray-300);
+}
+
+.footer-links h3, .footer-contact h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-2);
+  color: var(--color-secondary-light);
+}
+
+.footer-links ul li {
+  margin-bottom: var(--spacing-1);
+}
+
+.footer-links ul li a {
+  color: var(--color-gray-300);
+  transition: color var(--transition-fast);
+}
+
+.footer-links ul li a:hover {
+  color: var(--color-white);
+  padding-left: var(--spacing-1);
+}
+
+.footer-contact p {
+  color: var(--color-gray-300);
+  margin-bottom: var(--spacing-1);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--spacing-2);
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: var(--color-gray-400);
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .footer-content {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .footer-content {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: var(--spacing-6);
+  }
+}
