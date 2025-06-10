@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>深坑之美 | 台灣深坑觀光導覽</title>
+    <title>深坑老街 | 台灣深坑觀光導覽</title>
+    <link rel="stylesheet" href="styles/itinerary.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/hero.css" />
     <link rel="stylesheet" href="styles/sections.css" />
-    <link rel="stylesheet" href="styles/gallery.css" />
+    <link rel="stylesheet" href="styles/landscape.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +19,7 @@
     <header class="header">
       <div class="container">
         <div class="logo">
-          <h1>深坑之美</h1>
+          <h1>深坑老街</h1>
         </div>
         <nav class="main-nav">
           <ul>
@@ -26,8 +27,10 @@
             <li><a href="#attractions">老街景點</a></li>
             <li><a href="#cuisine">深坑四寶</a></li>
             <li><a href="#food">深坑美食</a></li>
+            <li><a href="#oneday">一日行程</a></li>
             <li><a href="#gallery">深坑風景</a></li>
             <li><a href="#travel">交通資訊</a></li>
+            <li><a href="#aboutMe">參訪心得</a></li>
           </ul>
         </nav>
         <div class="mobile-nav-toggle">
@@ -41,7 +44,7 @@
     <section class="hero">
       <div class="hero-content">
         <h1 class="fade-in">深坑老街</h1>
-        <h2 class="fade-in delay-1">豆腐之鄉的人文風情</h2>
+        <h2 class="fade-in delay-1">歡迎來到台灣文化導覽</h2>
         <a href="#about" class="btn-explore fade-in delay-2">探索深坑</a>
       </div>
       <div class="scroll-indicator">
@@ -99,40 +102,53 @@
               <div class="attraction-image">
                 <img src="./images/人孔蓋.jpg" alt="人孔蓋" />
               </div>
-              <div class="attraction-content">
+              <div class="cuisine-item">
                 <h3>人孔蓋</h3>
-                <p>老街的街道地板，鋪上了回收再利用的舊磚材，就連水溝蓋，也刻畫了深坑的記憶</p>
+                <p class="source-link">
+                  <a href="https://maps.app.goo.gl/DtqKA9voTPbo9ryDA" target="_blank">人孔蓋Google地圖位置</a>
+                </p>
+                <p>老街的街道地板，鋪上了回收再利用的舊磚材，就連水溝蓋，也刻畫了深坑的記憶 它象徵著這段歷史的存在。</p>
               </div>
             </div>
             <div class="attraction-card">
               <div class="attraction-image">
                 <img src="./images/深坑廳.jpg" alt="深坑廳" />
               </div>
-              <div class="attraction-content">
+            <div class="cuisine-item">
                 <h3>深坑廳</h3>
-                <p>因初期的治安騷動不斷，台北縣下設置了保良局，用以維護治安並補足行政上的不足</p>
-              </div>
+                <p class="source-link">
+                  <a href="https://maps.app.goo.gl/p6xFPMjXuh38FnQd6" target="_blank">深坑廳Google地圖位置</a>
+                </p>
+                <p>因初期的治安騷動不斷，台北縣下設置了保良局，用以維護治安並補足行政上的不足，維護深坑的安危。</p>
+            </div>
             </div>
             <div class="attraction-card">
               <div class="attraction-image">
                 <img src="./images/德興居.jpg" alt="德興居" />
               </div>
-              <div class="attraction-content">
+              <div class="cuisine-item">
                 <h3>德興居</h3>
-                <p>為仿巴洛克風格建築，裝飾華麗，使用花磚，象徵富貴。建築上常見迴型磚，象徵富貴綿延</p>
+                <p class="source-link">
+                  <a href="https://maps.app.goo.gl/nvQZh5b9ht7764aD7" target="_blank">德興居Google地圖位置</a>
+                </p>
+                <p>是黃德隆先生興建,為仿巴洛克風格建築，裝飾華麗，使用花磚，象徵富貴。建築上常見迴型磚，象徵富貴綿延。</p>
               </div>
             </div>
             <div class="attraction-card">
               <div class="attraction-image">
                 <img src="./images/百年榕樹.jpg" alt="百年榕樹" />
               </div>
-              <div class="attraction-content">
+              <div class="cuisine-item">
                 <h3>百年榕樹</h3>
-                <p>有棵百年老樹，多數在地人口耳相傳，習慣「相約榕樹下」，久而久之，民眾都以為老樹是榕樹，其實它是茄苳樹</p>
+                <p class="source-link">
+                  <a href="https://maps.app.goo.gl/ZdqEPRVet4iDYWpj6" target="_blank">百年老樹Google地圖位置</a>
+                </p>
+                <p>有棵百年老樹，多數在地人口耳相傳，習慣「相約榕樹下」，久而久之，民眾都以為老樹是榕樹，其實它是茄苳樹。</p>
               </div>
             </div>
           </div>
         </div>
+  
       </section>
 
       <section id="cuisine" class="section cuisine-section">
@@ -143,7 +159,7 @@
           </div>
           <div class="cuisine-content">
             <div class="cuisine-intro">
-              <p>將象徵深坑四寶的「豆腐」、「茶葉」、「綠竹筍」、「黑豬肉」等特產，以創新方式對外推廣，同時行銷深坑老街及古道古厝等將象徵深坑四寶的「豆腐」、「茶葉」、「綠竹筍」、「黑豬肉」等特產，以創新方式對外推廣，同時行銷深坑老街及古道古厝等</p>
+              <p>將象徵深坑四寶的「豆腐」、「茶葉」、「綠竹筍」、「黑豬肉」等特產，以創新方式對外推廣，同時行銷深坑老街及古道古厝等將象徵深坑四寶的「豆腐」、「茶葉」、「綠竹筍」、「黑豬肉」等特產，以創新方式對外推廣，同時行銷深坑老街及古道古厝等。</p>
             </div>
             <div class="cuisine-grid">
               <div class="cuisine-item">
@@ -169,7 +185,7 @@
                 <p class="source-link">
                   <a href="https://www.shenkeng.ntpc.gov.tw/home.jsp?id=2d948011cfea5c5b" target="_blank">圖片來源網址</a>
                 </p>
-                <p>是深坑最大的經濟作物是由於深坑土質很適合。如果在深坑小吃店會發現5-10月可以吃到當季的綠竹筍</p>
+                <p>是深坑最大的經濟作物是由於深坑土質很適合。如果在深坑小吃店會發現5-10月可以吃到當季的綠竹筍。</p>
               </div>
               <div class="cuisine-item">
                 <img src="./images/四寶_茶葉.png" alt="傳統小吃" />
@@ -177,14 +193,14 @@
                 <p class="source-link">
                   <a href="https://www.shenkeng.ntpc.gov.tw/home.jsp?id=2d948011cfea5c5b" target="_blank">圖片來源網址</a>
                 </p>
-                <p>茶葉是最早讓深坑揚名的經濟作物，雖然北台灣茶葉的主要產區移至坪林，不過在深坑品嘗到的文山包種茶更有種歷史意義</p>
+                <p>茶葉是最早讓深坑揚名的經濟作物，雖然北台灣茶葉的主要產區移至坪林，不過在深坑品嘗到的文山包種茶更有種歷史意義。</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-       <section id="food" class="section about-section">
+       <section id="food" class="section attractions-section">
         <div class="container">
           <div class="section-header">
             <h2>深坑美食</h2>
@@ -201,6 +217,65 @@
           </div>
         </div>
       </section>
+
+      <section id="oneday" class="section about-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>深坑老街一日遊</h2>
+            <span class="decorative-line"></span>
+          </div>
+        <div class="itinerary-grid">
+      <!-- 左欄 -->
+        <div class="itinerary-column">
+          <div class="itinerary-item">
+            <h3>10:00 - 抵達深坑老街</h3>
+            <p>搭乘捷運文湖線至木柵站，轉公車（660、666、679）約20分鐘，或自駕，停車於深坑公有停車場。</p>
+          </div>
+        <div class="itinerary-item">
+          <h3>10:30 - 深坑老街散步</h3>
+          <p>漫步老街（約300公尺），欣賞紅磚拱廊與閩南式建築。走訪手工藝品店（如深坑工藝坊），選購木雕、竹編等紀念品（約NT$100-500）。</p>
+        </div>
+        <div class="itinerary-item">
+          <h3>11:30 - 品嚐深坑小吃</h3>
+          <p>推薦小吃：</p>
+          <ul>
+            <li>現炸臭豆腐：如王水成臭豆腐，酥脆可口，約NT$60-80。</li>
+            <li>豆腐煲：如深坑老街豆腐店，湯底濃郁，約NT$100-150。</li>
+            <li>黑豬肉香腸：在地特色，約NT$50-80。</li>
+          </ul> 
+          <p>建議：搭配豆腐霜淇淋（老街頭炭燒豆腐霜淇淋，約NT$50）解膩。</p>
+        </div>
+        <div class="itinerary-item">
+          <h3>13:00 - 午餐：傳統客家菜或豆腐宴</h3>
+          <p>在深坑集順軒或深坑老街餐廳享用客家風味餐，含紅燒豆腐、客家小炒、綠竹筍湯等，套餐約NT$300-500/人。</p>
+          <p>建議：假日提前預約，避免排隊。</p>
+        </div>
+      </div>
+      <!-- 右欄 -->
+      <div class="itinerary-column">
+        <div class="itinerary-item">
+            <h3>14:30 - 文化探索：德興居</h3>
+            <p>步行約10分鐘至德興居（仿巴洛克建築），欣賞華麗花磚與迴型磚設計，免費入場。了解深坑歷史與建築之美。</p>
+        </div>
+        <div class="itinerary-item">
+          <h3>15:00 - 休閒咖啡時光/甜點時間</h3>
+          <p>在深坑老街咖啡館或豆腐主題餐廳享用豆腐奶茶（約NT$80-120）或芋圓冰（約NT$100）。可試芭樂嬌烤雞屁股，約NT$50-80。</p>
+        </div>
+        <div class="itinerary-item">
+          <h3>16:00 - 深坑吊橋與自然景點散步</h3>
+          <p>步行約10分鐘至深坑吊橋，欣賞淡水河畔風景。時間充裕可走景美溪步道（約15分鐘），享受自然清新。</p>
+        </div>
+        <div class="itinerary-item">
+          <h3>16:30 - 晚餐小吃或選購伴手禮</h3>
+          <p>回到老街，品嚐小吃或購買豆腐乳、豆腐乾（約NT$100-200）或北一綠豆沙牛奶（約NT$150）。推薦店家：深坑四寶伴手禮店。</p>
+        </div>
+        <div class="itinerary-item">
+          <h3>17:30 - 賦歸</h3>
+          <p>搭公車或自駕返回。建議查詢公車時刻表或預約計程車。</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
       <section id="gallery" class="section gallery-section">
         <div class="container">
@@ -273,12 +348,12 @@
         </div>
       </section>
 
-      <section id="travel" class="section travel-section">
-        <div class="container">
-          <div class="section-header">
-            <h2>交通資訊</h2>
-            <span class="decorative-line"></span>
-          </div>
+<section id="travel" class="section travel-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>交通資訊</h2>
+      <span class="decorative-line"></span>
+    </div>
           <div class="travel-content">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.0392569187825!2d121.61216277515686!3d25.00169157783734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aac505124e55%3A0x5f1415f00949f3f5!2zMjIy5paw5YyX5biC5rex5Z2R5Y2A5rex5Z2R6KGX!5e1!3m2!1szh-TW!2stw!4v1748962655426!5m2!1szh-TW!2stw" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="travel-info">
@@ -298,9 +373,34 @@
               </div>
             </div>
           </div>
+    
+  </div>
+</section>
+<section id="aboutMe" class="section cuisine-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>參訪心得</h2>
+        <span class="decorative-line"></span>
+      </div>
+      <div class="reflection-cards" style="display: flex; flex-wrap: wrap; gap: 20px;">
+        <div class="reflection-card" style="flex: 1 1 30%; background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
+          <h3>羅永州</h3>
+          <p>
+            這次期末網頁作業不僅加強了我對 HTML 和 CSS 的實務操作能力，
+            在參訪過程中，也體驗了許多在地傳統文化與特色美食。
+            最印象深刻的是午餐吃的豆腐料理，量多又好吃，如果有機會希望能品嘗其他更多的特色小吃!
+          </p>
         </div>
-      </section>
-    </main>
+        <div class="reflection-card" style="flex: 1 1 30%; background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
+          <h3>黃泓愷</h3>
+          <p>深坑的小吃讓我印象深刻，透過這次實地探索，也更加理解深坑的發展歷史，可惜當天下雨，天氣悶悶的。</p>
+        </div>
+        <div class="reflection-card" style="flex: 1 1 30%; background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
+          <h3>魏辰軒</h3>
+          <p>我認為這次的參訪很有意思,但不知為何時間有點短,其實沒有太多時間讓我們來好好逛逛,但嚮導非常熱情,跟我們介紹了許多在地歷史</p>
+        </div>
+  </div>
+</section>
 
     <footer class="footer">
       <div class="container">
@@ -316,15 +416,17 @@
               <li><a href="#attractions">老街景點</a></li>
               <li><a href="#cuisine">深坑四寶</a></li>
               <li><a href="#food">深坑美食</a></li>
+              <li><a href="#oneday">一日行程</a></li>
               <li><a href="#gallery">深坑風景</a></li>
               <li><a href="#travel">交通資訊</a></li>
+              <li><a href="#aboutMe">參訪心得</a></li>
             </ul>
           </div>
           <div class="footer-contact">
             <h3>聯絡資訊</h3>
             <p>中國科技大學</p>
-            <p>電郵：abc@gmail.com</p>
-            <p>電話：09-12345678</p>
+            <p>電郵：1121462001@gm.cute.edu.tw</p>
+            <p>電話：0963-391-789</p>
           </div>
         </div>
         <div class="footer-bottom">
@@ -333,7 +435,7 @@
         </div>
       </div>
     </footer>
-
+  </main>
     <script>
       // Simple JavaScript for mobile menu toggle
       document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
